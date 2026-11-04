@@ -1,0 +1,4 @@
+# Keep a CUT_CANDIDATE in the plan only with a written reason, for example:
+# cut_candidate_overrides:
+#   Cold_Interest: "Only source of net-new geos this quarter; re-test at reduced budget."
+cut_candidate_overrides: {}

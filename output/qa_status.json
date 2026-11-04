@@ -1,0 +1,9 @@
+{
+  "overall": "PASS",
+  "files": {
+    "plan.yaml": "859270c1f212b2e26fc006977a3001aec1414fb5b3b7e36d0e916ea25a37ca6f",
+    "meta_bulk_upload.csv": "710aff4019042207d9cb6c0e402c93fabf4046526d774f2f9e844964700361ca",
+    "google_ads_editor.csv": "5ded712d8a8b8f02db4925123eb7686c08e1ff6529d1102ab99eed7f3b32910b",
+    "meta_api_payloads.json": "1bf9aec784fc6af20a936a3a08a55b6a9e64bd4e92a5f5ac9389fe5aede5b5ed"
+  }
+}

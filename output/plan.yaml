@@ -1,0 +1,67 @@
+plan_status: DRAFT
+monthly_cap: 120000
+brand_terms:
+- '[brand term 1]'
+- '[brand term 2]'
+meta:
+  monthly_budget: 65000
+  unallocated_monthly: 15421.05
+  campaigns:
+  - name: Cold_Broad
+    objective: OUTCOME_SALES
+    buying_type: auction
+    optimization_goal: OFFSITE_CONVERSIONS
+    custom_event_type: TRIAL_START
+    bid_strategy: COST_CAP
+    cost_cap: 28000
+    daily_budget_cents: 143141
+    status: PAUSED
+    ads:
+    - name: Static_BenefitStack_A
+      creative_status: NEEDS_ASSET
+    - name: UGC_Founder_v2_Reshoot
+      replaces: UGC_Founder_v2
+      fresh_creative: true
+      angle: same_as_replaced_ad
+      creative_status: NEEDS_ASSET
+  - name: Retargeting_30d
+    objective: OUTCOME_SALES
+    buying_type: auction
+    optimization_goal: OFFSITE_CONVERSIONS
+    custom_event_type: TRIAL_START
+    bid_strategy: COST_CAP
+    cost_cap: 28000
+    daily_budget_cents: 22122
+    status: PAUSED
+    ads: []
+  replacements_required:
+  - Carousel_Old
+google:
+  monthly_budget: 50000
+  unallocated_monthly: 0.0
+  campaigns:
+  - name: PMax_US
+    daily_budget_micros: 329736082
+    bidding: TARGET_CPA
+    target_cpa_micros: 280000000
+    status: PAUSED
+    ad_groups: []
+  - name: Search_Brand_US
+    daily_budget_micros: 337729881
+    bidding: TARGET_CPA
+    target_cpa_micros: 200000000
+    status: PAUSED
+    ad_groups: []
+  - name: Search_NonBrand_US
+    daily_budget_micros: 999200703
+    bidding: TARGET_CPA
+    target_cpa_micros: 280000000
+    status: PAUSED
+    ad_groups: []
+reserve:
+  monthly_budget: 5000
+  release_condition: US NonBrand holds CPA <= 280 for 14 consecutive days
+compiler_notes:
+- 'Excluded Cold_Interest: CUT_CANDIDATE with no written override.'
+- Scaled proposals down by 0.2% to fit the $50,000 envelope.
+- 'Carousel_Old is FATIGUE: add an ad with `replaces: Carousel_Old` or QA fails.'

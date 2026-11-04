@@ -1,0 +1,21 @@
+Campaign,Daily Budget,Bid Strategy,Target CPA,Campaign Status,Networks,Location,Language
+Search_Brand_US,266.67,Target CPA,200.00,Paused,Search; Search partners,United States,English
+Ad group,Ad group type,Max CPC,Ad group status,Keywords,Keyword match type,Negatives
+Brand_Core,Standard,,Paused,[brand term 1]; [brand term 2],Exact,
+Brand_Core,Standard,,Paused,[brand term 1]; [brand term 2],Phrase,
+Ad type,Ad name,Headline 1,Headline 2,Headline 3,Description 1,Description 2,Final URL,Path 1,Path 2
+Responsive search ad,Brand_RSA_A,[Headline 1],[Headline 2],[Headline 3],[Description 1],[Description 2],https://example.com/signup?utm_source=google&utm_campaign=Search_Brand_US&utm_content=Brand_RSA_A,start,trial
+Campaign,Daily Budget,Bid Strategy,Target CPA,Campaign Status,Networks,Location,Language
+Search_NonBrand_US,1066.67,Maximize conversions,,Paused,Search; Search partners,United States,English
+Ad group,Ad group type,Max CPC,Ad group status,Keywords,Keyword match type,Negatives
+NonBrand_Core,Standard,,Paused,[non-brand term 1]; [non-brand term 2],Exact,free; jobs; careers; salary; login; support; reddit; wiki; template; tutorial; course; certification; internship; definition; meaning; pdf; download; crack; torrent; cheap; diy; open source; alternative to excel; review scam; cancel; refund; phone number; address; stock; layoffs; news; history; examples; homework; university; student discount; ppt; resume; interview questions; glassdoor; indeed; linkedin
+NonBrand_Core,Standard,,Paused,[non-brand term 1]; [non-brand term 2],Phrase,free; jobs; careers; salary; login; support; reddit; wiki; template; tutorial; course; certification; internship; definition; meaning; pdf; download; crack; torrent; cheap; diy; open source; alternative to excel; review scam; cancel; refund; phone number; address; stock; layoffs; news; history; examples; homework; university; student discount; ppt; resume; interview questions; glassdoor; indeed; linkedin
+Ad type,Ad name,Headline 1,Headline 2,Headline 3,Description 1,Description 2,Final URL,Path 1,Path 2
+Responsive search ad,NonBrand_RSA_A,[Headline 1],[Headline 2],[Headline 3],[Description 1],[Description 2],https://example.com/signup?utm_source=google&utm_campaign=Search_NonBrand_US&utm_content=NonBrand_RSA_A,start,trial
+Campaign,Daily Budget,Bid Strategy,Target CPA,Campaign Status,Networks,Location,Language
+PMax_US,333.33,Target CPA,280.00,Paused,All Google networks,United States,English
+Ad group,Ad group type,Max CPC,Ad group status,Keywords,Keyword match type,Negatives
+Brand_Negatives,Account negative list,,Paused,,,[brand term 1]; [brand term 2]
+PMax_Core,Asset group,,Paused,,,
+Ad type,Ad name,Headline 1,Headline 2,Headline 3,Description 1,Description 2,Final URL,Path 1,Path 2
+Asset group,PMax_Assets_A,[Headline 1],[Headline 2],[Headline 3],[Description 1],[Description 2],https://example.com/signup?utm_source=google&utm_campaign=PMax_US&utm_content=PMax_Assets_A,start,trial

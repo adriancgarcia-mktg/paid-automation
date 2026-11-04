@@ -1,0 +1,23 @@
+Campaign Name,Campaign Status,Campaign Objective,Campaign Daily Budget,Campaign Bid Strategy,Campaign Cost Cap
+Cold_Consolidated,PAUSED,OUTCOME_SALES,1666.67,COST_CAP,280.00
+Ad Set Name,Ad Set Status,Ad Set Daily Budget,Optimization Goal,Custom Event Type,Ad Set Name
+Cold_Consolidated - Main,PAUSED,1666.67,OFFSITE_CONVERSIONS,TRIAL_START,Cold_Consolidated - Main
+Ad Name,Ad Status,Format,Link URL,Primary Text,Headline,CTA
+Static_BenefitStack_A,PAUSED,image,https://example.com/signup?utm_source=facebook&utm_campaign=Cold_Consolidated&utm_content=Static_BenefitStack_A,[benefit stack copy],[headline],SIGN_UP
+Campaign Name,Campaign Status,Campaign Objective,Campaign Daily Budget,Campaign Bid Strategy,Campaign Cost Cap
+Retargeting_30d,PAUSED,OUTCOME_SALES,166.67,COST_CAP,280.00
+Ad Set Name,Ad Set Status,Ad Set Daily Budget,Optimization Goal,Custom Event Type,Ad Set Name
+Retargeting_30d - Main,PAUSED,166.67,OFFSITE_CONVERSIONS,TRIAL_START,Retargeting_30d - Main
+Ad Name,Ad Status,Format,Link URL,Primary Text,Headline,CTA
+Retarg_Testimonial_A,PAUSED,image,https://example.com/signup?utm_source=facebook&utm_campaign=Retargeting_30d&utm_content=Retarg_Testimonial_A,[testimonial copy],[headline],SIGN_UP
+Campaign Name,Campaign Status,Campaign Objective,Campaign Daily Budget,Campaign Bid Strategy,Campaign Cost Cap
+Creative_Testing,PAUSED,OUTCOME_SALES,333.33,COST_CAP,280.00
+Ad Set Name,Ad Set Status,Ad Set Daily Budget,Optimization Goal,Custom Event Type,Ad Set Name
+Creative_Testing - Test_Hook_A,PAUSED,111.11,OFFSITE_CONVERSIONS,TRIAL_START,Creative_Testing - Test_Hook_A
+Ad Name,Ad Status,Format,Link URL,Primary Text,Headline,CTA
+Test_Hook_A,PAUSED,video,https://example.com/signup?utm_source=facebook&utm_campaign=Creative_Testing&utm_content=Test_Hook_A,[hook A copy],[headline],SIGN_UP
+Ad Set Name,Ad Set Status,Ad Set Daily Budget,Optimization Goal,Custom Event Type,Ad Set Name
+Creative_Testing - Test_Hook_B,PAUSED,111.11,OFFSITE_CONVERSIONS,TRIAL_START,Creative_Testing - Test_Hook_B
+Creative_Testing - Carousel_Testimonial_v2,PAUSED,111.11,OFFSITE_CONVERSIONS,TRIAL_START,Creative_Testing - Carousel_Testimonial_v2
+Ad Name,Ad Status,Format,Link URL,Primary Text,Headline,CTA
+Carousel_Testimonial_v2,PAUSED,image,https://example.com/signup?utm_source=facebook&utm_campaign=Creative_Testing&utm_content=Carousel_Testimonial_v2,[testimonial copy],[headline],SIGN_UP

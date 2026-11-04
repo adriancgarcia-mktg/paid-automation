@@ -1,0 +1,22 @@
+Week starting,Campaign,Ad name,Spend ($),Impressions,Clicks,Trials,Frequency,CPA ($)
+2026-09-07,Cold_Broad,UGC_Founder_v2,3500,157500,3307,23,1.4,152.17
+2026-09-14,Cold_Broad,UGC_Founder_v2,3500,157500,3307,21,1.89,166.67
+2026-09-21,Cold_Broad,UGC_Founder_v2,3500,157500,3307,19,2.38,184.21
+2026-09-28,Cold_Broad,UGC_Founder_v2,3500,157500,3307,17,2.87,205.88
+2026-10-05,Cold_Broad,UGC_Founder_v2,3500,157500,3307,15,3.36,233.33
+2026-10-12,Cold_Broad,UGC_Founder_v2,3500,157500,3307,12,3.85,291.67
+2026-09-07,Cold_Broad,Static_BenefitStack_A,2500,112500,2024,10,1.2,250.0
+2026-09-14,Cold_Broad,Static_BenefitStack_A,2500,112500,2024,10,1.28,250.0
+2026-09-21,Cold_Broad,Static_BenefitStack_A,2500,112500,2024,10,1.36,250.0
+2026-09-28,Cold_Broad,Static_BenefitStack_A,2500,112500,2024,10,1.44,250.0
+2026-10-05,Cold_Broad,Static_BenefitStack_A,2500,112500,2024,9,1.52,277.78
+2026-10-12,Cold_Broad,Static_BenefitStack_A,2500,112500,2024,10,1.6,250.0
+2026-09-07,Cold_Interest,Carousel_Old,1800,81000,972,5,1.6,360.0
+2026-09-14,Cold_Interest,Carousel_Old,1800,81000,972,5,1.9,360.0
+2026-09-21,Cold_Interest,Carousel_Old,1800,81000,972,5,2.2,360.0
+2026-09-28,Cold_Interest,Carousel_Old,1800,81000,972,4,2.5,450.0
+2026-10-05,Cold_Interest,Carousel_Old,1800,81000,972,4,2.8,450.0
+2026-10-12,Cold_Interest,Carousel_Old,1800,81000,972,3,3.1,600.0
+2026-09-07,Cold_Interest,Video_Hook_Test3,500,22500,360,0,1.1,-
+2026-09-14,Cold_Interest,Video_Hook_Test3,500,22500,360,0,1.2,-
+2026-09-21,Cold_Interest,Video_Hook_Test3,500,22500,360,0,1.3,-

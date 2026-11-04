@@ -1,0 +1,264 @@
+[
+  {
+    "params": {
+      "name": "Cold_Consolidated",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "special_ad_categories": [],
+      "is_adset_budget_sharing_enabled": false
+    },
+    "adsets": [
+      {
+        "params": {
+          "name": "Cold_Consolidated - Main",
+          "daily_budget": 166667,
+          "billing_event": "IMPRESSIONS",
+          "optimization_goal": "OFFSITE_CONVERSIONS",
+          "bid_strategy": "COST_CAP",
+          "bid_amount": 28000,
+          "targeting": {
+            "geo_locations": {
+              "countries": [
+                "US"
+              ]
+            }
+          },
+          "status": "PAUSED",
+          "promoted_object": {
+            "pixel_id": "${META_PIXEL_ID}",
+            "custom_event_type": "START_TRIAL"
+          }
+        },
+        "ads": [
+          {
+            "creative": {
+              "name": "Static_BenefitStack_A creative",
+              "object_story_spec": {
+                "page_id": "${META_PAGE_ID}",
+                "link_data": {
+                  "image_hash": "SAMPLE_IMAGE_HASH_001",
+                  "link": "https://example.com/signup?utm_source=facebook&utm_campaign=Cold_Consolidated&utm_content=Static_BenefitStack_A",
+                  "message": "[benefit stack copy]",
+                  "name": "[headline]",
+                  "call_to_action": {
+                    "type": "SIGN_UP",
+                    "value": {
+                      "link": "https://example.com/signup?utm_source=facebook&utm_campaign=Cold_Consolidated&utm_content=Static_BenefitStack_A"
+                    }
+                  }
+                }
+              }
+            },
+            "params": {
+              "name": "Static_BenefitStack_A",
+              "status": "PAUSED"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "params": {
+      "name": "Retargeting_30d",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "special_ad_categories": [],
+      "is_adset_budget_sharing_enabled": false
+    },
+    "adsets": [
+      {
+        "params": {
+          "name": "Retargeting_30d - Main",
+          "daily_budget": 16667,
+          "billing_event": "IMPRESSIONS",
+          "optimization_goal": "OFFSITE_CONVERSIONS",
+          "bid_strategy": "COST_CAP",
+          "bid_amount": 28000,
+          "targeting": {
+            "geo_locations": {
+              "countries": [
+                "US"
+              ]
+            }
+          },
+          "status": "PAUSED",
+          "promoted_object": {
+            "pixel_id": "${META_PIXEL_ID}",
+            "custom_event_type": "START_TRIAL"
+          }
+        },
+        "ads": [
+          {
+            "creative": {
+              "name": "Retarg_Testimonial_A creative",
+              "object_story_spec": {
+                "page_id": "${META_PAGE_ID}",
+                "link_data": {
+                  "image_hash": "SAMPLE_IMAGE_HASH_002",
+                  "link": "https://example.com/signup?utm_source=facebook&utm_campaign=Retargeting_30d&utm_content=Retarg_Testimonial_A",
+                  "message": "[testimonial copy]",
+                  "name": "[headline]",
+                  "call_to_action": {
+                    "type": "SIGN_UP",
+                    "value": {
+                      "link": "https://example.com/signup?utm_source=facebook&utm_campaign=Retargeting_30d&utm_content=Retarg_Testimonial_A"
+                    }
+                  }
+                }
+              }
+            },
+            "params": {
+              "name": "Retarg_Testimonial_A",
+              "status": "PAUSED"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "params": {
+      "name": "Creative_Testing",
+      "objective": "OUTCOME_SALES",
+      "status": "PAUSED",
+      "special_ad_categories": [],
+      "is_adset_budget_sharing_enabled": false
+    },
+    "adsets": [
+      {
+        "params": {
+          "name": "Creative_Testing - Test_Hook_A",
+          "daily_budget": 11111,
+          "billing_event": "IMPRESSIONS",
+          "optimization_goal": "OFFSITE_CONVERSIONS",
+          "bid_strategy": "COST_CAP",
+          "bid_amount": 28000,
+          "targeting": {
+            "geo_locations": {
+              "countries": [
+                "US"
+              ]
+            },
+            "excluded_custom_audiences": [
+              {
+                "id": "${META_EXCLUSION_AUDIENCE_ID}"
+              }
+            ]
+          },
+          "status": "PAUSED",
+          "promoted_object": {
+            "pixel_id": "${META_PIXEL_ID}",
+            "custom_event_type": "START_TRIAL"
+          }
+        },
+        "ads": [
+          {
+            "creative": {
+              "name": "Test_Hook_A creative",
+              "object_story_spec": {
+                "page_id": "${META_PAGE_ID}",
+                "video_data": {
+                  "video_id": "1000000000000001",
+                  "message": "[hook A copy]",
+                  "title": "[headline]",
+                  "call_to_action": {
+                    "type": "SIGN_UP",
+                    "value": {
+                      "link": "https://example.com/signup?utm_source=facebook&utm_campaign=Creative_Testing&utm_content=Test_Hook_A"
+                    }
+                  }
+                }
+              }
+            },
+            "params": {
+              "name": "Test_Hook_A",
+              "status": "PAUSED"
+            }
+          }
+        ]
+      },
+      {
+        "params": {
+          "name": "Creative_Testing - Test_Hook_B",
+          "daily_budget": 11111,
+          "billing_event": "IMPRESSIONS",
+          "optimization_goal": "OFFSITE_CONVERSIONS",
+          "bid_strategy": "COST_CAP",
+          "bid_amount": 28000,
+          "targeting": {
+            "geo_locations": {
+              "countries": [
+                "US"
+              ]
+            },
+            "excluded_custom_audiences": [
+              {
+                "id": "${META_EXCLUSION_AUDIENCE_ID}"
+              }
+            ]
+          },
+          "status": "PAUSED",
+          "promoted_object": {
+            "pixel_id": "${META_PIXEL_ID}",
+            "custom_event_type": "START_TRIAL"
+          }
+        },
+        "ads": []
+      },
+      {
+        "params": {
+          "name": "Creative_Testing - Carousel_Testimonial_v2",
+          "daily_budget": 11111,
+          "billing_event": "IMPRESSIONS",
+          "optimization_goal": "OFFSITE_CONVERSIONS",
+          "bid_strategy": "COST_CAP",
+          "bid_amount": 28000,
+          "targeting": {
+            "geo_locations": {
+              "countries": [
+                "US"
+              ]
+            },
+            "excluded_custom_audiences": [
+              {
+                "id": "${META_EXCLUSION_AUDIENCE_ID}"
+              }
+            ]
+          },
+          "status": "PAUSED",
+          "promoted_object": {
+            "pixel_id": "${META_PIXEL_ID}",
+            "custom_event_type": "START_TRIAL"
+          }
+        },
+        "ads": [
+          {
+            "creative": {
+              "name": "Carousel_Testimonial_v2 creative",
+              "object_story_spec": {
+                "page_id": "${META_PAGE_ID}",
+                "link_data": {
+                  "image_hash": "SAMPLE_IMAGE_HASH_003",
+                  "link": "https://example.com/signup?utm_source=facebook&utm_campaign=Creative_Testing&utm_content=Carousel_Testimonial_v2",
+                  "message": "[testimonial copy]",
+                  "name": "[headline]",
+                  "call_to_action": {
+                    "type": "SIGN_UP",
+                    "value": {
+                      "link": "https://example.com/signup?utm_source=facebook&utm_campaign=Creative_Testing&utm_content=Carousel_Testimonial_v2"
+                    }
+                  }
+                }
+              }
+            },
+            "params": {
+              "name": "Carousel_Testimonial_v2",
+              "status": "PAUSED"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

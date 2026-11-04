@@ -1,0 +1,168 @@
+# Approved campaign plan: the single source of truth for every build.
+# SAMPLE VALUES. Replace brand terms, URLs, copy and asset IDs with real ones.
+# Builders refuse any plan whose plan_status is not APPROVED.
+plan_status: APPROVED
+monthly_cap: 120000
+brand_terms: ["[brand term 1]", "[brand term 2]"]
+
+meta:
+  monthly_budget: 65000
+  campaigns:
+    - name: Cold_Consolidated
+      type: prospecting
+      buying_type: auction
+      objective: OUTCOME_SALES
+      optimization_goal: OFFSITE_CONVERSIONS
+      custom_event_type: TRIAL_START        # or qualified scheduled event if one exists
+      bid_strategy: COST_CAP
+      cost_cap: 28000                       # $280 in cents
+      daily_budget_cents: 166667            # $50K/mo / 30 = $1,666.67/day
+      status: PAUSED
+      ads:
+        - name: UGC_Founder_v3_Reshot
+          replaces: UGC_Founder_v2
+          format: video
+          angle: ugc_founder
+          creative_status: NEEDS_ASSET
+          fresh_creative: true
+          landing_url: https://example.com/signup
+          primary_text: "[founder story copy]"
+          headline: "[headline]"
+          cta: SIGN_UP
+        - name: Static_BenefitStack_A
+          format: image
+          angle: benefit_stack
+          creative_status: READY
+          asset_id: SAMPLE_IMAGE_HASH_001
+          landing_url: https://example.com/signup
+          primary_text: "[benefit stack copy]"
+          headline: "[headline]"
+          cta: SIGN_UP
+    - name: Retargeting_30d
+      type: retargeting
+      buying_type: auction
+      objective: OUTCOME_SALES
+      optimization_goal: OFFSITE_CONVERSIONS
+      custom_event_type: TRIAL_START
+      bid_strategy: COST_CAP
+      cost_cap: 28000
+      daily_budget_cents: 16667             # $5K/mo / 30 = $166.67/day
+      status: PAUSED
+      ads:
+        - name: Retarg_Testimonial_A
+          format: image
+          angle: testimonial
+          creative_status: READY
+          asset_id: SAMPLE_IMAGE_HASH_002
+          landing_url: https://example.com/signup
+          primary_text: "[testimonial copy]"
+          headline: "[headline]"
+          cta: SIGN_UP
+    - name: Creative_Testing
+      type: testing
+      structure: one_ad_per_adset
+      exclusion: 3s_video_viewers_between_adsets
+      buying_type: auction
+      objective: OUTCOME_SALES
+      optimization_goal: OFFSITE_CONVERSIONS
+      custom_event_type: TRIAL_START
+      bid_strategy: COST_CAP
+      cost_cap: 28000
+      daily_budget_cents: 33333             # $10K/mo / 30 = $333.33/day, split across ad sets
+      status: PAUSED
+      ads:
+        - name: Test_Hook_A
+          format: video
+          angle: hook_problem
+          creative_status: READY
+          asset_id: "1000000000000001"
+          landing_url: https://example.com/signup
+          primary_text: "[hook A copy]"
+          headline: "[headline]"
+          cta: SIGN_UP
+        - name: Test_Hook_B
+          format: video
+          angle: hook_outcome
+          creative_status: NEEDS_ASSET
+          landing_url: https://example.com/signup
+          primary_text: "[hook B copy]"
+          headline: "[headline]"
+          cta: SIGN_UP
+        - name: Carousel_Testimonial_v2
+          replaces: Carousel_Old
+          format: image
+          angle: testimonial
+          creative_status: READY
+          asset_id: SAMPLE_IMAGE_HASH_003
+          landing_url: https://example.com/signup
+          primary_text: "[testimonial copy]"
+          headline: "[headline]"
+          cta: SIGN_UP
+
+google:
+  monthly_budget: 50000                     # $8K + $32K + $10K campaigns
+  campaigns:
+    - name: Search_Brand_US
+      type: search
+      daily_budget_micros: 266666667        # $8K/mo / 30 = $266.67/day
+      bidding: TARGET_CPA
+      target_cpa_micros: 200000000          # documented Brand exception at $200
+      match_types: [exact, phrase]
+      status: PAUSED
+      ad_groups:
+        - name: Brand_Core
+          type: Standard
+          keywords: ["[brand term 1]", "[brand term 2]"]
+          ads:
+            - name: Brand_RSA_A
+              type: Responsive search ad
+              headlines: ["[Headline 1]", "[Headline 2]", "[Headline 3]"]
+              descriptions: ["[Description 1]", "[Description 2]"]
+              landing_url: https://example.com/signup
+              path1: start
+              path2: trial
+    - name: Search_NonBrand_US
+      type: search
+      daily_budget_micros: 1066666667       # $32K/mo / 30 = $1,066.67/day
+      bidding: MAXIMIZE_CONVERSIONS
+      tcpa_deferred_until: "30 conversions/month sustained, then tCPA 280 via plan edit"
+      negatives: 40_plus_list               # resolved from Change_Log plus audit flags
+      match_types: [exact, phrase]
+      status: PAUSED
+      ad_groups:
+        - name: NonBrand_Core
+          type: Standard
+          keywords: ["[non-brand term 1]", "[non-brand term 2]"]
+          ads:
+            - name: NonBrand_RSA_A
+              type: Responsive search ad
+              headlines: ["[Headline 1]", "[Headline 2]", "[Headline 3]"]
+              descriptions: ["[Description 1]", "[Description 2]"]
+              landing_url: https://example.com/signup
+              path1: start
+              path2: trial
+    - name: PMax_US
+      type: pmax
+      daily_budget_micros: 333333333        # $10K/mo / 30 = $333.33/day
+      bidding: TARGET_CPA
+      target_cpa_micros: 280000000
+      brand_negation: true
+      probation_days: 21
+      kill_condition: "CPA > 280 for 7 consecutive days after day 14"
+      status: PAUSED
+      ad_groups:
+        - name: PMax_Core
+          type: Asset group
+          keywords: []
+          ads:
+            - name: PMax_Assets_A
+              type: Asset group
+              headlines: ["[Headline 1]", "[Headline 2]", "[Headline 3]"]
+              descriptions: ["[Description 1]", "[Description 2]"]
+              landing_url: https://example.com/signup
+              path1: start
+              path2: trial
+
+reserve:
+  monthly_budget: 5000
+  release_condition: "US NonBrand holds CPA <= 280 for 14 consecutive days"

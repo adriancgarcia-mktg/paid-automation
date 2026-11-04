@@ -1,0 +1,6 @@
+# Human-approved budget envelope consumed by scripts/02_compile_plan.py.
+# The compiler only allocates these dollars. It never invents budgets.
+monthly_cap: 120000
+meta: 65000
+google: 50000
+reserve: 5000
